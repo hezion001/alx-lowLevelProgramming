@@ -1,13 +1,16 @@
 #include "main.h"
 /**
- * print_line - prints an underscore: '_', n times
- * @n: the width of the line
- *
- * Return: void
+ * print_line - prints an underscore n times
+ * @n: number of times printed
+  * Return: void
  */
 void print_line(int n)
 {
-	while (n-- > 0)
-		_putchar('_');
-	_putchar('\n');
+	int i;
 
+	for (i = 0; i < n; i++)
+	{
+		_putchar('_');
+	}
+	_putchar('\n');
+}
